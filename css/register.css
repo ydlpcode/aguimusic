@@ -1,0 +1,10 @@
+header{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+header.none{
+    margin: 0px;
+}
+.form-control{
+    border-radius: 0px;
+}

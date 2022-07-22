@@ -1,0 +1,21 @@
+header{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+header.none{
+    margin: 0px;
+}
+div{
+    width: 40%;
+}
+.form-control{
+    border-radius: 0px;
+}
+input[type="submit"]{
+    color: var(--white);
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color: var(--lightblue);
+    color: white
+}

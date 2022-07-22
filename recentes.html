@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+      <title>AguiMusic Blog/template for django backend</title>
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/ydlp.css">
+  </head>
+  <body>
+    <!-- banner e logo do blog -->
+    <header id="banner" class="navbar bg-black white">
+      <figure class="navbar-brand">
+        <img src="img/einstein.jpg">
+      </figure>
+      <h1>AguiMusic Blog</h1>
+    </header>
+    <!-- search bar for all musics, artists and albuns -->
+    <mav id="searchbar">
+      <form action="" method="post">
+          <input type="search" 
+          placeholder="Pesquise por artistas, musicas ou albuns">
+      </form>
+    </mav>
+    <!-- menu do usuario actual -->
+    <nav id="menu" class="navbar bg-light">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <strong>Usuário:</strong> desconhecido
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AguiMusic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="recentes.html">Músicas recentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="albuns.html">Albuns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="musicas.html">Músicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="artistas.html">Artistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre a AguiMusic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                Desenvolvedor: Ydlpcode<br/>
+                Contactos:
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:ydlpclientside@gmail.com">Email</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/ydlpcode">Github</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:244936695953">WhatApp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br/>
+    <article id="MusicBlog">
+      <section id="novidades">
+        <h2 class="bg-light">Músicas adicionadas recentemente</h2>
+        <div class="box-c nav">
+          <figure class="bg-dark">
+            <a href="music_details/21_Guns.html">
+              <img src="#">
+              <figcaption>21 Guns - Green Day</figcaption>
+            </a>
+          </figure>
+          <figure class="bg-dark fg-2">
+            <a href="music_details/american_idiot.html" >
+              <img src="#">
+              <figcaption>American Idiot - Green Day</figcaption>
+            </a>
+          </figure>
+          <figure class="bg-dark fg-3">
+            <a href="music_details/boulevard_of_broken_dreams.html">
+              <img src="#">
+              <figcaption>Boulevard Of Broken Dreams - Green Day</figcaption>
+            </a>
+          </figure>
+          <figure class="bg-dark">
+            <a href="music_details/father_of_all.html">
+              <img src="#">
+              <figcaption>Father Of All - Green Day</figcaption>
+            </a>
+          </figure>
+          <figure class="bg-dark fg-2">
+            <a href="music_details/holiday.html">
+              <img src="#">
+              <figcaption>Holiday - Green Day</figcaption>
+            </a>
+          </figure>
+          <figure class="bg-dark fg-3">
+            <a href="music_details/oh_love.html">
+              <img src="#">
+              <figcaption>Oh Love - Green Day</figcaption>
+            </a>
+          </figure>
+          <p><a href="musicas.html">Ver todas às mùsicas</a></p>
+        </div>
+      </section>
+    </article>
+    <hr>
+    <!-- publicidades ydlpcode-->
+    <aside id="publicidades" class="bg-light">
+      <div class="box-c nav c white">
+        <figure class="bg-dark fg">
+          <a href="mailto:ydlpclientside@gmail.com">
+            <img src="https://ydlpcode.github.io/pub/pub1.jpg" alt="email da ydlpcode">
+          </a>
+        </figure>
+        <figure class="bg-dark fg-2">
+          <a href="https://youtube.com/">
+            <img src="https:77ydlpcode.github.io/pub/pub2.jpg" alt="canal ydlpcode no youtube">
+          </a> 
+        </figure>
+      </div>
+    </aside>
+    <hr>
+    <!-- rodape do blog -->
+    <footer id="rodape" class="c bg-light">
+        <h6>Contactos</h6>
+        <div class="box-c">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/email.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="{https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+  </body>
+</html>

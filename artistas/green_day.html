@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <title>MusicBlog/template for django backend</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/music_details.css">
+    <link rel="stylesheet" href="../css/ydlp.css">
+</head>
+<body>
+    <!-- banner e logo do blog -->
+    <header id="banner" class="navbar bg-black white">
+        <figure class="navbar-brand">
+            <img src="../img/einstein.jpg">
+        </figure>
+        <h1>AguiMusic Blog</h1>
+    </header>
+    <!-- search bar for all musics, artists and albuns -->
+    <mav id="searchbar">
+        <form action="" method="post">
+            <input type="search" 
+            placeholder="Pesquise por artistas, musicas ou albuns">
+        </form>
+    </mav>
+    <!-- menu do usuario actual -->
+    <nav id="menu" class="navbar bg-light">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <strong>Usuário:</strong> desconhecido
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AguiMusic</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../recentes.html">Músicas recentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../albuns.html">Albuns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../musicas.html">Músicas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sobre.html">Sobre a AguiMusic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  Desenvolvedor: Ydlpcode<br/>
+                  Contactos:
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:ydlpclientside@gmail.com">Email</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ydlpcode">Github</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tel:244936695953">WhatApp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <br/>
+    <article id="MusicBlog">
+        <section id="novidades">
+            <h2 class="bg-light">Green Day</h2>
+            <div class="container">
+                <figure class="bg-dark">
+                    <img src="#">
+                </figure>
+            </div>
+            <div class="container">
+                <p>
+                    Nome (artista, banda etc): <em>Green Day</em><br/>
+                    Albuns: <em>Desconecido</em><br/>
+                    Músicas: <em>Desconhecido</em><br/>
+                    Pais de origem: <em>Desconhecido</em><br/>
+                    Lingua: <em>Ing</em><br/>
+                    <!-- caso seja uma banda -->
+                    Integrante(s): <em>Desconhecido</em><br/>
+                    Compositor(es): <em>Desconhecido</em><br/>
+                    Inicio de carreira: <em>Desconhecido</em>
+                    <hr>
+                    <div class="accordion">
+                        <h3>Audios</h3>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#audios">
+                                    Lista de músicas
+                                </button>
+                            </h3>
+                            <div id="audios" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Indisponivel
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Videos</h3>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#videos">
+                                    Lista de videos
+                                </button>
+                            </h3>
+                            <div id="videos" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Indisponivel
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+    </article>
+    <hr>
+    <!-- publicidades ydlpcode-->
+    <aside id="publicidades" class="bg-light">
+      <div class="box-c nav c white">
+        <figure class="bg-dark fg">
+            <img src="https://ydlpcode.github.io/pub/pub1.jpg" alt="Publicidade1">
+            <figcaption></figcaption>
+        </figure>
+        <figure class="bg-dark fg-2">
+            <img src="https:77ydlpcode.github.io/pub/pub2.jpg" alt="Publicidade2">
+            <figcaption></figcaption>
+        </figure>
+      </div>
+    </aside>
+    <hr>
+    <!-- rodape do blog -->
+    <footer id="rodape" class="c bg-light">
+        <h6>Contactos</h6>
+        <div class="box-c">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="../img/email.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="../img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="../img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="{https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+</body>
+</html>

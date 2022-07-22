@@ -1,0 +1,80 @@
+/* banner styles */
+#banner{
+    padding-top: 10px;
+    background-image: url("../img/writing-923882__340.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px black;
+}
+figure.navbar-brand{
+    background-color: var(--white3);
+}
+.navbar h1{
+    position: relative;
+    right: 5%;
+}
+figure.navbar-brand{
+    width: 20%;
+    height: 200px;
+    margin-left: 5%;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+}
+header figure img{
+    width: 100%;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: -5px;
+}
+input[type="search"]{
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+}
+/*-------------- novidades ---------------*/
+article{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+.fg-2{
+    margin-left: 5%;
+}
+.fg-3{
+    margin-left: 5%;
+}
+/*------------ aside styles --------------*/
+aside{
+
+}
+aside div{
+    width: 90%;
+}
+aside figure{
+    width: 47.5%;
+    height: 250px;
+}
+aside figure img{
+    width: 100%;
+    height: 100%;
+}
+/*------------ footer styles -------------*/
+footer div{
+    padding-left: 17.5%;
+}
+footer figure{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 100px;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+}

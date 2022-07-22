@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <title>MusicBlog/template for django backend</title>
+    <link rel="stylesheet" href="css/musicas.css">
+    <link rel="stylesheet" href="css/ydlp.css">
+</head>
+<body>
+    <!-- banner e logo do blog -->
+    <header id="banner" class="navbar bg-black white">
+        <figure class="navbar-brand">
+            <img src="img/einstein.jpg">
+        </figure>
+        <h1>AguiMusic Blog</h1>
+    </header>
+    <!-- search bar for all musics, artists and albuns -->
+    <nav id="searchbar">
+        <form action="" method="post">
+            <input type="search" 
+            placeholder="Pesquise por artistas, musicas ou albuns">
+        </form>
+    </nav>
+    <!-- menu do usuario actual -->
+    <nav id="menu" class="navbar bg-light">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <strong>Usuário:</strong> desconhecido
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AguiMusic</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="recentes.html">Músicas recentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="albuns.html">Albuns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="musicas.html">Músicas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre.html">Sobre a AguiMusic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  Desenvolvedor: Ydlpcode<br/>
+                  Contactos:
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:ydlpclientside@gmail.com">Email</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/ydlpcode">Github</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tel:244936695953">WhatApp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <header id="title-and-description">
+        <h2>Artistas (lista completa)</h2>
+    </header>
+    <article id="MusicBlog">
+        <section class="accordion">
+            <!-- lista númerica -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-0123">
+                        0-1 @!-
+                    </button>
+                </strong>
+                <div id="lista-0123" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista a -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-a">
+                        A
+                    </button>
+                </strong>
+                <div id="lista-a" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista b -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-b">
+                        B
+                    </button>
+                </strong>
+                <div id="lista-b" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista c -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-c">
+                        C
+                    </button>
+                </strong>
+                <div id="lista-c" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista d -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-d">
+                        D
+                    </button>
+                </strong>
+                <div id="lista-d" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista e -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-e">
+                        E
+                    </button>
+                </strong>
+                <div id="lista-e" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista f -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-f">
+                        F
+                    </button>
+                </strong>
+                <div id="lista-f" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista g -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-g">
+                        G
+                    </button>
+                </strong>
+                <div id="lista-g" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista h -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-h">
+                        H
+                    </button>
+                </strong>
+                <div id="lista-h" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista i -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-i">
+                        I
+                    </button>
+                </strong>
+                <div id="lista-i" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista j -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-j">
+                        
+                        J
+                    </button>
+                </strong>
+                <div id="lista-j" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista k -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-k">
+                        K
+                    </button>
+                </strong>
+                <div id="lista-k" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista l -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-l">
+                        L
+                    </button>
+                </strong>
+                <div id="lista-l" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista m -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-m">
+                        M
+                    </button>
+                </strong>
+                <div id="lista-m" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!-- lista n -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-n">
+                        N
+                    </button>
+                </strong>
+                <div id="lista-n" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista o -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-o">
+                        O
+                    </button>
+                </strong>
+                <div id="lista-o" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista c -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-p">
+                        P
+                    </button>
+                </strong>
+                <div id="lista-p" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista q -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-q">
+                        Q
+                    </button>
+                </strong>
+                <div id="lista-q" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista r -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-r">
+                        R
+                    </button>
+                </strong>
+                <div id="lista-r" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista s -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-s">
+                        S
+                    </button>
+                </strong>
+                <div id="lista-s" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista t -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-t">
+                        T
+                    </button>
+                </strong>
+                <div id="lista-t" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista u -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-u">
+                        U
+                    </button>
+                </strong>
+                <div id="lista-u" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista v -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-v">
+                        V
+                    </button>
+                </strong>
+                <div id="lista-v" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista w -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-w">
+                        W
+                    </button>
+                </strong>
+                <div id="lista-w" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista x -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-x">
+                        X
+                    </button>
+                </strong>
+                <div id="lista-x" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista c -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-y">
+                        Y
+                    </button>
+                </strong>
+                <div id="lista-y" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <!-- lista z -->
+            <div class="accordion-item">
+                <strong class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lista-z">
+                        Z
+                    </button>
+                </strong>
+                <div id="lista-z" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lista indisponivel
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!-- publicidades ydlpcode-->
+    <aside id="publicidades" class="bg-light">
+      <div class="box-c nav c white">
+        <figure class="bg-dark fg">
+            <img src="https://ydlpcode.github.io/pub/pub1.jpg" alt="Publicidade1">
+            <figcaption></figcaption>
+        </figure>
+        <figure class="bg-dark fg-2">
+            <img src="https:77ydlpcode.github.io/pub/pub2.jpg" alt="Publicidade2">
+            <figcaption></figcaption>
+        </figure>
+      </div>
+    </aside>
+    <!-- rodape do blog -->
+    <footer id="rodape" class="c bg-light">
+        <h6>Contactos</h6>
+        <div class="box-c">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/email.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <figure>
+                            <img src="img/whatsapp.png">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="{https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+</body>
+</html>
