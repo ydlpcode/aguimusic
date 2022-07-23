@@ -28,23 +28,6 @@ header figure img{
     position: relative;
     top: -5px;
 }
-@media screen and (max-width: 481px) {
-    figure.navbar-brand{
-        width: 20%;
-        height: 110px;
-        margin-left: 5%;
-        position: relative;
-        top: 6px;
-        border-radius: 100%;
-    }
-    header figure img{
-        width: 100%;
-        height: 110px;
-        position: relative;
-        top: -5px;
-        border-radius: 100%;
-    }
-}
 input[type="search"]{
     background: none;
     border: none;
@@ -60,16 +43,24 @@ section div{
 section figure{
     width: 30%;
     height: 250px;
-}section figure img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+section figcaption{
+    text-align: center;
+    font-size: 10pt;
+    background-color: var(--white2);
+}
+section figure img{
     width: 100%;
     height: 100%;
-}@media screen and (max-width: 481px) {
-	section figure{
-		width: 30%;
-		height: 120px;
-	}section figure img{
-		width: 100%;
-		height: 100%;
+}
+section p{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
 }
 .fg-2{
     margin-left: 5%;
@@ -77,22 +68,30 @@ section figure{
 .fg-3{
     margin-left: 5%;
 }
+/*------------ aside styles --------------*/
+aside{
+
+}
+aside div{
+    width: 90%;
+}
+aside figure{
+    width: 47.5%;
+    height: 250px;
+}
+aside figure img{
+    width: 100%;
+    height: 100%;
+}
 /*------------ footer styles -------------*/
 footer div{
-    padding-left: 17%;
+    padding-left: 17.5%;
 }
 footer figure{
     width: 50px;
     height: 50px;
-}
-}@media screen and (max-width: 481px) {
-	footer div{
-		padding-left: 7%;
-	}
-	footer figure{
-		width: 50px;
-		height: 50px;
-	}
+    border: solid;
+    border-radius: 100px;
 }
 footer img{
     width: 100%;
